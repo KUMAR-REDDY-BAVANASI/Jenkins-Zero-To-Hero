@@ -46,6 +46,9 @@ docker run -d -p 8010:8080 -t ultimate-cicd-pipeline:v1
 
 Hurray !! Access the application on `http://<ip-address>:8010`
 
+![image](https://user-images.githubusercontent.com/50985434/234256096-91499deb-52c4-48be-bed5-400e4b034a2e.png)
+
+
 
 ## Next Steps
 
@@ -64,5 +67,10 @@ cd sonarqube-9.4.0.54424/bin/linux-x86-64/
 
 Hurray !! Now you can access the `SonarQube Server` on `http://<ip-address>:9000` 
 
-![image](https://user-images.githubusercontent.com/50985434/234255830-b6f9fbee-372d-4ba5-b45f-b7ca50e42470.png)
+```
+Username: admin
+Password: admin
+```
+
+![image](https://user-images.githubusercontent.com/50985434/234256254-61f80ba6-a6a6-4de9-a7c1-f686b91445b0.png)
 
