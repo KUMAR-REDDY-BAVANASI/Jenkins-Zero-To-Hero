@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: todo
-        image: kumar5483/todoapp:replaceImageTag
+        image: kumar5483/todoapp:7
         ports:
         - containerPort: 8000
