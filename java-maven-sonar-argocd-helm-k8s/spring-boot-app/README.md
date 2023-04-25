@@ -64,4 +64,5 @@ cd sonarqube-9.4.0.54424/bin/linux-x86-64/
 
 Hurray !! Now you can access the `SonarQube Server` on `http://<ip-address>:9000` 
 
+![image](https://user-images.githubusercontent.com/50985434/234255830-b6f9fbee-372d-4ba5-b45f-b7ca50e42470.png)
 
