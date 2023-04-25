@@ -44,7 +44,7 @@ pipeline {
                         git add python-jenkins-argocd-k8s/deploy/deploy.yaml
                         git commit -m 'Updated the deploy yaml | Jenkins Pipeline'
                         git remote -v
-                        git push https://github.com/KUMAR-REDDY-BAVANASI/cicd-demo-manifests-repo.git HEAD:main
+                        git push https://github.com/KUMAR-REDDY-BAVANASI/Jenkins-Zero-To-Hero.git HEAD:main
                         '''
                 }
             }
