@@ -18,7 +18,7 @@ pipeline {
         stage('Build and Push Docker Image') {
           environment {
             DOCKER_IMAGE = "kumar5483/todoapp:${IMAGE_TAG}"
-            // DOCKERFILE_LOCATION = "Dockerfile"
+            // DOCKERFILE_LOCATION = "python-jenkins-argocd-k8s/Dockerfile"
             REGISTRY_CREDENTIALS = credentials('docker-cred')
           }
           steps {
