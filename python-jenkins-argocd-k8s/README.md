@@ -1,7 +1,7 @@
 # django-todo
 A simple todo app built with django
 
-![todo App](https://raw.githubusercontent.com/shreys7/django-todo/develop/staticfiles/todoApp.png)
+![todoApp](https://user-images.githubusercontent.com/50985434/234255232-9a8439d3-1ed8-4b0e-981e-1c492a9bb9ff.png)
 
 ## CICD Architecture [GitHub -> Jenkins -> k8s Manifests -> Argo CD -> k8s cluster]
 
