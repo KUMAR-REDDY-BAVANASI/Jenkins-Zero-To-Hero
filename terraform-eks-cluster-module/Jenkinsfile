@@ -28,7 +28,7 @@ pipeline {
                                 sh "terraform ${params.action} -refresh=false"
                             }}
                         }
-                        stage('terraform init/plan/apply on cluster'){
+                        stage('terraform init/destroy on cluster'){
                             when {
                                 expression { params.action == 'destroy' }
                             }
