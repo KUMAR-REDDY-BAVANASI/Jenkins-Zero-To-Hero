@@ -25,7 +25,7 @@ pipeline {
                                 sh "terraform init -reconfigure -input=false"
                                 sh "terraform plan -out plan.out"
                                 echo "Terraform action is --> ${action}"
-                                sh "terraform ${params.action} -refresh=false"
+                                sh "terraform ${params.action} -refresh=false --auto-approve" 
                             }}
                         }
                         stage('terraform init/destroy on cluster'){
@@ -45,9 +45,9 @@ pipeline {
             }
         }
     }
-    // post { 
-    //     always { 
-    //         cleanWs()
-    //     }
-    // }
+    post { 
+        always { 
+            cleanWs()
+        }
+    }
 }
