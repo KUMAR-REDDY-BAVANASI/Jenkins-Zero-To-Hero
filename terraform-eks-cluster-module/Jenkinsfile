@@ -20,10 +20,8 @@ pipeline {
                                 expression { params.action == 'apply' }
                             }
                             steps{
-                                dir("./Jenkins-Zero-To-Hero/terraform-eks-cluster-module/dev"){
+                                dir("terraform-eks-cluster-module/dev/"){
                                 // sh "terraform init -reconfigure -input=false -backend=true -backend-config=bucket=devmain-terraform-state -backend-config=key=eks/cluster.tfstate"
-                                sh "pwd"
-                                sh "ls"
                                 sh "terraform init -reconfigure -input=false"
                                 sh "terraform plan -out plan.out"
                                 echo "Terraform action is --> ${action}"
@@ -35,7 +33,7 @@ pipeline {
                                 expression { params.action == 'destroy' }
                             }
                             steps{
-                                dir("./Jenkins-Zero-To-Hero/terraform-eks-cluster-module/dev"){
+                                dir("terraform-eks-cluster-module/dev/"){
                                 // sh "terraform init -reconfigure -input=false -backend=true -backend-config=bucket=devmain-terraform-state -backend-config=key=eks/cluster.tfstate"
                                 sh "terraform init -reconfigure -input=false"
                                 echo "Terraform action is --> ${action}"
