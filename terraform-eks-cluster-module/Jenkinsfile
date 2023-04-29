@@ -4,12 +4,12 @@ pipeline {
         choice(name: 'action', choices: ['apply', 'destroy'], description: 'Do you want to perform Terraform Apply or Destroy?')
     } 
     stages{
-        stage('Checkout') {
-          steps {
-            // sh 'echo passed'
-            // git branch: 'main', url: 'https://github.com/KUMAR-REDDY-BAVANASI/Jenkins-Zero-To-Hero.git'
-          }
-        }
+        // stage('Checkout') {
+        //   steps {
+        //     sh 'echo passed'
+        //     // git branch: 'main', url: 'https://github.com/KUMAR-REDDY-BAVANASI/Jenkins-Zero-To-Hero.git'
+        //   }
+        // }
 
         stage('Run tasks'){
             parallel {
