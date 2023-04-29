@@ -1,1 +1,0 @@
-# terraform-eks-cluster-module
